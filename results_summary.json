@@ -4,56 +4,56 @@
   "raw_messages": 5572,
   "duplicates_removed": 403,
   "unique_messages": 5169,
-  "training_messages": 4135,
-  "test_messages": 1034,
+  "training_messages": 4122,
+  "test_messages": 1047,
   "processed_group_overlap": 0,
-  "vocabulary_size": 2712,
+  "vocabulary_size": 2734,
   "model": "TF-IDF + Logistic Regression",
-  "accuracy": 0.9816247582205029,
-  "f1_spam": 0.9283018867924528,
-  "f1_ham": 0.9894620077648364,
-  "f1_macro": 0.9588819472786446,
-  "f1_weighted": 0.9817726308534149,
-  "spam_precision": 0.9111111111111111,
-  "spam_recall": 0.9461538461538461,
+  "accuracy": 0.9837631327602674,
+  "f1_spam": 0.933852140077821,
+  "f1_ham": 0.9907457811649428,
+  "f1_macro": 0.9622989606213819,
+  "f1_weighted": 0.983681623245816,
+  "spam_precision": 0.9448818897637795,
+  "spam_recall": 0.9230769230769231,
   "confusion_matrix_label_order": [
     "ham",
     "spam"
   ],
   "confusion_matrix": [
     [
-      892,
-      12
+      910,
+      7
     ],
     [
-      7,
-      123
+      10,
+      120
     ]
   ],
   "top_10_words_per_class": {
     "ham": [
-      "ok",
       "k",
-      "happi",
+      "ok",
       "ll",
-      "u",
-      "say",
       "home",
       "da",
+      "u",
       "got",
-      "later"
+      "hope",
+      "said",
+      "way"
     ],
     "spam": [
       "uk",
       "txt",
+      "servic",
       "150p",
       "mobil",
-      "servic",
       "www",
       "claim",
-      "sm",
-      "won",
-      "repli"
+      "repli",
+      "text",
+      "video"
     ]
   }
 }

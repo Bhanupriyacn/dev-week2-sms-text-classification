@@ -20,7 +20,8 @@ Lowercase → punctuation removal → tokenization → English stopword removal 
 Porter stemming → TF-IDF → Logistic Regression. The model uses fixed `C=5`,
 balanced class weights and `random_state=42`. TF-IDF is fitted on training data
 only. Exact duplicates are removed; equivalent processed messages remain in one
-partition using StratifiedGroupKFold. The test data is not used for tuning.
+partition using a deterministic stratified group holdout based on SHA-256. The
+test data is not used for tuning.
 
 ## Held-out results
 | Measure | Result |
@@ -28,15 +29,15 @@ partition using StratifiedGroupKFold. The test data is not used for tuning.
 | Raw SMS messages | 5572 |
 | Exact duplicates removed | 403 |
 | Unique messages | 5169 |
-| Training messages | 4135 |
-| Test messages | 1034 |
-| Accuracy | 0.9816 (98.16%) |
-| F1 — spam | 0.9283 |
-| F1 — ham | 0.9895 |
-| F1 — macro | 0.9589 |
-| F1 — weighted | 0.9818 |
-| Spam precision | 0.9111 |
-| Spam recall | 0.9462 |
+| Training messages | 4122 |
+| Test messages | 1047 |
+| Accuracy | 0.9838 (98.38%) |
+| F1 — spam | 0.9339 |
+| F1 — ham | 0.9907 |
+| F1 — macro | 0.9623 |
+| F1 — weighted | 0.9837 |
+| Spam precision | 0.9449 |
+| Spam recall | 0.9231 |
 
 Accuracy can hide minority-class failures; the notebook therefore compares
 against a majority-class baseline and reports F1 for each class. The confusion
@@ -48,8 +49,8 @@ These are training-derived Logistic Regression word stems, ranked by coefficient
 magnitude in the direction of each class. They are associations, not causes.
 Purely numeric features are excluded from this word list but remain model inputs.
 
-- **Ham:** ok, k, happi, ll, u, say, home, da, got, later.
-- **Spam:** uk, txt, 150p, mobil, servic, www, claim, sm, won, repli.
+- **Ham:** k, ok, ll, home, da, u, got, hope, said, way.
+- **Spam:** uk, txt, servic, 150p, mobil, www, claim, repli, text, video.
 
 ![Top 10 words for each class](top_10_words_per_class.png)
 ![Held-out confusion matrix](confusion_matrix.png)
