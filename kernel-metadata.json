@@ -1,0 +1,15 @@
+{
+  "id": "bhanupriyacn/dev-week2-sms-text-classification-tfidf",
+  "title": "Dev Week2 SMS Text Classification TFIDF",
+  "code_file": "dev_week2_sms_text_classification.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "uciml/sms-spam-collection-dataset"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
