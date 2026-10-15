@@ -1,4 +1,4 @@
-# Dev Week2: Classify Text Sentiment — SMS Text Classification
+# Day 6 NLP: Classify Text Sentiment — SMS Text Classification
 
 ## Problem statement
 Classify Text Sentiment — Preprocess the text (lowercase, remove punctuation/stopwords, tokenize, stem or lemmatize), extract features using Bag-of-Words or TF-IDF, then train a text classification model (e.g. Naive Bayes or Logistic Regression) to predict the label. Report Accuracy and F1-score, and show the top 10 most important words per class.
@@ -11,9 +11,9 @@ predicts ham/spam. Positive/negative sentiment labels are not present.
 The source data is attached or downloaded from Kaggle rather than redistributed here.
 
 ## Submission links
-- [Public Kaggle notebook](https://www.kaggle.com/code/bhanupriyacn/dev-week2-sms-text-classification-tfidf)
-- [Executed GitHub notebook](https://github.com/Bhanupriyacn/dev-week2-sms-text-classification/blob/main/dev_week2_sms_text_classification.ipynb)
-- Notebook for upload: `dev_week2_sms_text_classification.ipynb`
+- [Public Kaggle notebook](https://www.kaggle.com/code/bhanupriyacn/day-6-nlp-sms-text-classification)
+- [Executed GitHub notebook](https://github.com/Bhanupriyacn/dev-week2-sms-text-classification/blob/main/Day_6_NLP_SMS_Text_Classification_SUBMIT.ipynb)
+- Notebook for upload: `Day_6_NLP_SMS_Text_Classification_SUBMIT.ipynb`
 
 ## Implementation
 Lowercase → punctuation removal → tokenization → English stopword removal →
@@ -56,7 +56,7 @@ Purely numeric features are excluded from this word list but remain model inputs
 ![Held-out confusion matrix](confusion_matrix.png)
 
 ## Files and reproduction
-- `dev_week2_sms_text_classification.ipynb`: complete executed notebook, including the assignment statement.
+- `Day_6_NLP_SMS_Text_Classification_SUBMIT.ipynb`: complete executed notebook, including the assignment statement.
 - `classification_metrics.csv`, `per_class_report.csv`: accuracy and F1 metrics.
 - `top_10_words_per_class.csv`: all 20 ranked words with coefficients.
 - `split_summary.csv`, `test_predictions.csv`, `results_summary.json`: split and evaluation evidence.

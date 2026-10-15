@@ -1,5 +1,5 @@
 {
-  "assignment": "Dev Week2: Classify Text Sentiment (SMS ham/spam labels)",
+  "assignment": "Day 6 NLP: Classify Text Sentiment (SMS ham/spam labels)",
   "dataset": "uciml/sms-spam-collection-dataset",
   "raw_messages": 5572,
   "duplicates_removed": 403,
