@@ -1,0 +1,3 @@
+label,messages,median_characters,median_words,messages_with_url,mean_uppercase_ratio
+ham,4516,52.0,11.0,1,0.07834044087214698
+spam,653,149.0,25.0,90,0.16508860920627325
