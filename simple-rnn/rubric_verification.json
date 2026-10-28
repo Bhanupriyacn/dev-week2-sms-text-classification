@@ -1,0 +1,12 @@
+{
+  "revision": "Day-1 rubric correction",
+  "R1": "shape, head, dtypes, info, describe and interpretation present",
+  "R2": "missing/blank/duplicates/conflicting labels and IQR analysis with retention rationale present",
+  "R3": "4 rendered PNG charts; titles and axes visually inspected",
+  "R4": "4 engineered dataframe features; definitions, rationale, samples and statistics present",
+  "R5": "5 markdown bullets with verified data figures",
+  "notebook_cells": 25,
+  "rendered_charts": 4,
+  "errors": 0,
+  "rnn_settings_preserved": true
+}
