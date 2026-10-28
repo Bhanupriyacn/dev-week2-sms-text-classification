@@ -17,7 +17,7 @@ The model's `df` still contains only `text` and `label`. EDA features live in `e
 Files `eda_summary.json`, `features_by_label.csv`, `length_label_association.csv`, and `rubric_verification.json` provide inspectable supporting evidence. The four charts are embedded in the executed notebook and are also produced as PNG files when it runs.
 
 
-Local verification:
+Final verification:
 
 ```json
 {
@@ -30,6 +30,16 @@ Local verification:
   "notebook_cells": 25,
   "rendered_charts": 4,
   "errors": 0,
-  "rnn_settings_preserved": true
+  "rnn_settings_preserved": true,
+  "github_public": true,
+  "github_matches_corrected_downloads": true,
+  "kaggle_version": 2,
+  "kaggle_status": "KernelWorkerStatus.COMPLETE",
+  "kaggle_public": true,
+  "kaggle_eda_matches_local": true,
+  "kaggle_rendered_chart_files": 4,
+  "local_test_accuracy": 0.9767891764640808,
+  "kaggle_test_accuracy": 0.9738878011703491,
+  "external_grading_rerun": false
 }
 ```
