@@ -12,8 +12,8 @@
   "batch_size": 64,
   "architecture": "Embedding(5000,32) -> SimpleRNN(32) -> Dense(1,sigmoid)",
   "model_parameters": 162113,
-  "test_accuracy": 0.9748549461364746,
-  "test_loss": 0.10521893948316574,
+  "test_accuracy": 0.9738878011703491,
+  "test_loss": 0.09223753958940506,
   "majority_baseline_accuracy": 0.8733075435203095,
   "confusion_matrix": [
     [
@@ -21,8 +21,8 @@
       0
     ],
     [
-      26,
-      105
+      27,
+      104
     ]
   ],
   "tensorflow_version": "2.20.0"
