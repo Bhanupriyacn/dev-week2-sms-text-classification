@@ -2,6 +2,7 @@ tensorflow>=2.16,<2.21
 pandas>=2.0
 numpy>=1.26
 scikit-learn>=1.4
+matplotlib>=3.8,<4
 kagglehub>=0.3
 nbformat>=5.10
 nbclient>=0.10
