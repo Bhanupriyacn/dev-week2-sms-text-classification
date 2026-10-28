@@ -41,6 +41,8 @@ Remove 403 exact duplicate messages before the stratified 80/20 split (`random_s
 
 The confusion matrix (rows=actual, columns=predicted; order=ham, spam) is `[[903, 0], [24, 107]]`. The notebook includes all training epochs, model summary, test accuracy, and the full classification report. Accuracy alone can hide missed spam; 24 of 131 test spam messages were missed in this local run. Results describe one historical dataset split and may vary with TensorFlow version and hardware; local execution used TensorFlow 2.20.0.
 
+Kaggle Version 1 also completed successfully with the same split and required settings: **97.49% test accuracy**, confusion matrix `[[903, 0], [26, 105]]`. Small numerical differences across CPU/platform runs can change training even with fixed seeds; the local executed notebook reports **97.68%**. See `kaggle_results_summary.json` for the independently executed Kaggle result.
+
 ## Why long sequences are difficult
 
 During backpropagation through time, gradients are repeatedly multiplied by recurrent weights and activation derivatives, which can make them shrink toward zero over many time steps (the vanishing gradient problem). As a result, words far back in a long sequence receive weak learning signals, making long-range dependencies difficult for a plain RNN to learn.
