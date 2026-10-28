@@ -2,13 +2,29 @@
 
 Predict **ham** (legitimate SMS) or **spam** from message text using the [SMS Spam Collection dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset).
 
+## Corrected submission: Day-1 rubric evidence
+
+The revised notebook addresses all five reported omissions and preserves the original SimpleRNN task. All 25 cells were executed locally without errors; four chart images are embedded in the notebook. This verification covers the supplied feedback; an external grade has not been rerun here.
+
+| Rubric item | Explicit evidence in notebook |
+|---|---|
+| R1 — Initial inspection | Cell 4: `df.shape`, `head`, `dtypes`, `df.info()`, `df.describe(include="all")`, null/blank/duplicate counts; cell 5 interprets them. |
+| R2 — Anomalies/outliers | Cell 10: character-length distribution, 1.5 × IQR bounds, flagged counts, longest-message inspection, missing/zero-word/conflicting-label checks; cell 11 explains retaining all 66 length outliers. |
+| R3 — EDA visualizations | Cell 13: four rendered charts with titles and labelled axes: label counts, length histogram, length-by-label boxplot, spam proportion by length quartile. |
+| R4 — Engineered dataframe features | Cells 7–8: `message_length`, `word_count`, `has_url`, `uppercase_ratio` in `eda_df`, with definitions, rationale, samples, dtypes and statistics by label. |
+| R5 — Five insights | Cell 14: exactly five markdown bullets citing cleaning counts, class imbalance, length/word patterns, IQR outliers and URL association. |
+
+The model's `df` still contains only `text` and `label`. EDA features live in `eda_df`; the RNN receives only 50-token text sequences. The model still uses `Embedding(5000, 32) → SimpleRNN(32) → Dense(1, sigmoid)` and runs exactly five epochs.
+
+Files `eda_summary.json`, `features_by_label.csv`, `length_label_association.csv`, and `rubric_verification.json` provide inspectable supporting evidence. The four charts are embedded in the executed notebook and are also produced as PNG files when it runs.
+
 ## Submission
 
 - [Executed notebook on GitHub](https://github.com/Bhanupriyacn/dev-week2-sms-text-classification/blob/main/simple-rnn/Simple_RNN_SMS_Text_Classification_SUBMIT.ipynb)
 - [Notebook on Kaggle](https://www.kaggle.com/code/bhanupriyacn/simple-rnn-sms-text-classification)
 - Upload file: `Simple_RNN_SMS_Text_Classification_SUBMIT.ipynb`
 
-## Exact assignment implementation
+## Exact RNN assignment implementation
 
 Keep only `text` and `label`, encode ham=0 and spam=1, and fit Keras `Tokenizer(num_words=5000, oov_token="<OOV>")` on training messages only. Use `pad_sequences(..., maxlen=50)` for both partitions, with pre-padding and pre-truncation. Every model input has exactly 50 token indices, irrespective of original message length.
 
