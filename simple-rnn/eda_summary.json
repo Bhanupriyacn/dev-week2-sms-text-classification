@@ -1,0 +1,38 @@
+{
+  "raw_shape": [
+    5572,
+    5
+  ],
+  "retained_input_columns": [
+    "text",
+    "label"
+  ],
+  "missing_text_or_label_before_cleaning": 0,
+  "blank_text_rows_before_cleaning": 0,
+  "duplicates_removed": 403,
+  "clean_rows": 5169,
+  "class_counts": {
+    "ham": 4516,
+    "spam": 653
+  },
+  "engineered_features": [
+    "message_length",
+    "word_count",
+    "has_url",
+    "uppercase_ratio"
+  ],
+  "length_q1": 36.0,
+  "length_q3": 117.0,
+  "length_iqr": 81.0,
+  "length_upper_iqr_bound": 238.5,
+  "length_outliers": 66,
+  "length_min": 2,
+  "length_max": 910,
+  "outlier_policy": "Retain all messages; do not cap character features. Model inputs use fixed maxlen=50 tokens.",
+  "chart_files": [
+    "01_label_counts.png",
+    "02_length_histogram.png",
+    "03_length_by_label_boxplot.png",
+    "04_length_label_association.png"
+  ]
+}
