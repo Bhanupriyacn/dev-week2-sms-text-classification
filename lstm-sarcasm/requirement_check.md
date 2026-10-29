@@ -1,0 +1,31 @@
+# LSTM sarcasm assignment: verification
+
+```json
+{
+  "R1": "shape, head, dtype/info, describe-all and interpretation",
+  "R2": "missing/blank/duplicates/conflicting labels and IQR checks with inspected examples and retention rationale",
+  "R3": "4 rendered charts; titles, axes and units visually inspected",
+  "R4": "4 engineered EDA features with definitions, rationale and statistics",
+  "R5": "5 markdown insight bullets with checked data figures",
+  "exact_required_lstm_model": true,
+  "epochs": 5,
+  "maxlen": 50,
+  "num_words": 5000,
+  "local_notebooks_executed": 2,
+  "cells_per_notebook": 25,
+  "images_per_notebook": 4,
+  "execution_errors": 0,
+  "bonus_code_changes_only_recurrent_layer_output_directory_and_parameter_assertion": true,
+  "local_lstm_accuracy": 0.85511314868927,
+  "local_gru_accuracy": 0.8572180271148682,
+  "external_grade_rerun": false,
+  "github_public": true,
+  "github_matches_downloads": true,
+  "kaggle_lstm_status": "KernelWorkerStatus.COMPLETE",
+  "kaggle_gru_status": "KernelWorkerStatus.COMPLETE",
+  "kaggle_both_public": true,
+  "kaggle_both_source_and_eda_verified": true,
+  "kaggle_lstm_accuracy": 0.8558147549629211,
+  "kaggle_gru_accuracy": 0.8503771424293518
+}
+```
