@@ -1,0 +1,31 @@
+{
+  "dataset": "rmisra/news-headlines-dataset-for-sarcasm-detection",
+  "source_file": "Sarcasm_Headlines_Dataset_v2.json",
+  "raw_rows": 28619,
+  "duplicates_removed": 116,
+  "retained_rows": 28503,
+  "train_rows": 22802,
+  "test_rows": 5701,
+  "seed": 42,
+  "num_words": 5000,
+  "maxlen": 50,
+  "epochs": 5,
+  "batch_size": 64,
+  "recurrent_layer": "LSTM",
+  "model_parameters": 168353,
+  "architecture": "Embedding(5000,32) -> LSTM(32) -> Dense(1,sigmoid)",
+  "test_accuracy": 0.85511314868927,
+  "test_loss": 0.3638303279876709,
+  "majority_baseline_accuracy": 0.5244693913348535,
+  "confusion_matrix": [
+    [
+      2632,
+      358
+    ],
+    [
+      468,
+      2243
+    ]
+  ],
+  "tensorflow_version": "2.20.0"
+}
