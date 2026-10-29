@@ -45,6 +45,17 @@ GRU differs by **0.21 percentage points** in these local runs. Its copy uses the
 
 LSTM confusion matrix (rows=actual, columns=predicted; order=not sarcastic, sarcastic): `[[2632, 358], [468, 2243]]`. The notebooks also report per-class precision, recall and F1. These results describe a fixed holdout from this historical source dataset; floating-point/platform differences can slightly change training outcomes. Both local runs use TensorFlow 2.20.0.
 
+## Independently executed Kaggle results
+
+Both Kaggle Version 1 notebooks completed successfully and are **public**. Their source, v2 dataset, split settings, EDA summary, four PNG outputs and five training epochs were verified; no execution traceback was present. Kaggle results can differ slightly from local runs due to numerical/platform differences.
+
+| Model | Kaggle test accuracy | Kaggle test loss | Epochs |
+|---|---:|---:|---:|
+| Required LSTM | 85.58% | 0.3633 | 5 |
+| Bonus GRU | 85.04% | 0.3712 | 5 |
+
+The bonus GRU changes accuracy by **-0.54 percentage points** relative to LSTM in these Kaggle runs. This is a single-seed comparison, not proof of general superiority. See `kaggle_lstm_results_summary.json` and `kaggle_gru_results_summary.json` for the exact outputs.
+
 ## EDA rubric evidence included in both notebooks
 
 | Item | Explicit notebook evidence |
