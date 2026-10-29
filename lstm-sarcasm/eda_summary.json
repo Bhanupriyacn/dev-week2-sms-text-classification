@@ -1,0 +1,41 @@
+{
+  "source_file": "Sarcasm_Headlines_Dataset_v2.json",
+  "source_shape": [
+    28619,
+    3
+  ],
+  "retained_input_columns": [
+    "text",
+    "label"
+  ],
+  "clean_rows": 28503,
+  "missing_values_before": 0,
+  "blank_text_rows": 0,
+  "duplicates_removed": 116,
+  "class_counts": {
+    "not sarcastic": 14951,
+    "sarcastic": 13552
+  },
+  "engineered_features": [
+    "message_length",
+    "word_count",
+    "punctuation_count",
+    "has_question"
+  ],
+  "length_q1": 49.0,
+  "length_q3": 75.0,
+  "length_iqr_lower": 10.0,
+  "length_iqr_upper": 114.0,
+  "short_outliers": 9,
+  "long_outliers": 295,
+  "total_outliers": 304,
+  "length_min": 7,
+  "length_max": 926,
+  "outlier_policy": "Retain all flagged messages; no character/word-count capping; model maxlen=50 tokens.",
+  "chart_files": [
+    "01_label_counts.png",
+    "02_length_histogram.png",
+    "03_length_by_label_boxplot.png",
+    "04_length_label_association.png"
+  ]
+}
